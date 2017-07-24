@@ -5,99 +5,112 @@
 body {
 	background: #c1c1c1;
 	background-image: url(./../images/background.png)
-
 }
 
-#headerfooter {
-	width: 100%;
-	height: 100%;
-}
-
-.panel-heading {
-	font-size: 26px;
-	font-weight: bold;
-	width:auto; 
-	height: auto; 
-	background: black;
-}
-
-#walloftext {
-	padding: 26px;
-	font-size: 18px;
-	line-height: 200%;
-}
-
-#face {
-	float: left;
-	padding: 10px 26px 26px 0px;
-}
-
-.inputs {
-	padding: 20px;
-}
-
-
-
-#items {
-	width:auto;
-}
-
-.portfolios {
-	position: absolute; 
-	display: inline-block; 
-	position: relative; 
-	background-size: auto;
-	width: auto;
-	left:18px;
-}
-
-#portfolioimg {
-	padding: 36px 10px;
-	width: auto;
-	height: 90%;
-}
-
-#portfolioimgtext {
-	position: absolute; 
-	float: left;
-	top: 170px;
-	left: 16px;
-	padding: 10px; 
-	background: rgba(252, 252, 252, 0.8);
-	font-size: 22px;
-	background-size: auto; 
-	height: auto;
-}
-
-@media screen and (max-width: 768px) {
-	.portfolios {
-		width: 1024px;
+/*Header & Footer*/
+	#headerfooter {
+		width: 100%;
+		height: 100%;
 	}
-}
 
-#textbox {
-	width: 100%;
-	height: 100%;
-}
+	.footer {
+		clear: both;
+		background: #fcfcfc;
+		text-align: center;
+		padding: 14px;
+		position: fixed;
+		width: 100%;
+	    bottom: 0;
+	    margin: 0 auto;
+	}
 
-/*connect & footer*/
 
-.connect {
-	padding: 2px;
-}
+/*Index Content*/
+	.panel-heading {
+		font-size: 26px;
+		font-weight: bold;
+		width:100%; 
+		height: auto; 
+		background: black;
+		
+	}
 
-#styledimg {
-	padding: 2px;
-}
+	#walloftext {
+		padding: 26px;
+		font-size: 18px;
+		line-height: 200%;
+	}
 
-.footer {
-	clear: both;
-	background: #fcfcfc;
-	text-align: center;
-	padding: 14px;
-	position: fixed;
-	width: 100%;
-    bottom: 0;
-    margin: 0 auto;
+	#face {
+		float: left;
+		padding: 10px 26px 26px 0px;
+	}
 
-}
+
+/*Portfolio Content*/
+	.allP {
+		min-width:426px;
+	}
+
+	.portfolios {
+		display: inline-block; 
+		position: relative; 
+		left:18px;
+		overflow: auto;
+	}
+
+	#portfolioimg {
+		position: relative;
+		padding: 36px 10px;
+		width: 92%;
+		height: 92%;
+	}
+
+	#portfolioimgtext {
+		position: absolute; 
+		top: 159px;
+		left: 16px;
+		padding: 10px; 
+		background: rgba(252, 252, 252, 0.8);
+		font-size: 22px;
+		background-size: 100%; 
+	}
+
+
+/*Contact Content*/
+	.inputs {
+		padding: 20px;
+	}
+
+	#textbox {
+		width: 100%;
+		height: 100%;
+	}
+
+
+/*Side Connect*/
+	.connect {
+		position: relative;
+		padding: 2px;
+    	width: 100%;
+	}
+
+	#styledimg {
+		padding: 2px;
+	}
+
+/*
+	  These rules take effect when the browser's width
+	  is either 991px or less.
+	*/
+		@media (max-width:991px) {
+			.connect {
+
+			}
+
+			#portfolioimg {
+		    	width:70%;
+		    	height:70%;
+		  }
+
+		}
