@@ -1,0 +1,103 @@
+* {
+	color: #;
+}
+
+body {
+	background: #c1c1c1;
+	background-image: url(./../images/background.png)
+
+}
+
+#headerfooter {
+	width: 100%;
+	height: 100%;
+}
+
+.panel-heading {
+	font-size: 26px;
+	font-weight: bold;
+	width:auto; 
+	height: auto; 
+	background: black;
+}
+
+#walloftext {
+	padding: 26px;
+	font-size: 18px;
+	line-height: 200%;
+}
+
+#face {
+	float: left;
+	padding: 10px 26px 26px 0px;
+}
+
+.inputs {
+	padding: 20px;
+}
+
+
+
+#items {
+	width:auto;
+}
+
+.portfolios {
+	position: absolute; 
+	display: inline-block; 
+	position: relative; 
+	background-size: auto;
+	width: auto;
+	left:18px;
+}
+
+#portfolioimg {
+	padding: 36px 10px;
+	width: auto;
+	height: 90%;
+}
+
+#portfolioimgtext {
+	position: absolute; 
+	float: left;
+	top: 170px;
+	left: 16px;
+	padding: 10px; 
+	background: rgba(252, 252, 252, 0.8);
+	font-size: 22px;
+	background-size: auto; 
+	height: auto;
+}
+
+@media screen and (max-width: 768px) {
+	.portfolios {
+		width: 1024px;
+	}
+}
+
+#textbox {
+	width: 100%;
+	height: 100%;
+}
+
+/*connect & footer*/
+
+.connect {
+	padding: 2px;
+}
+
+#styledimg {
+	padding: 2px;
+}
+
+.footer {
+	clear: both;
+	background: #fcfcfc;
+	text-align: center;
+	padding: 14px;
+	position: fixed;
+	width: 100%;
+    bottom: 0;
+    margin: 0 auto;
+
+}
